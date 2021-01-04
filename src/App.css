@@ -1,0 +1,109 @@
+.App {
+  text-align: start;
+}
+
+/************** HEADER ******************/
+.header{
+  display: flex;
+  background-color: black;
+  padding: 1rem;
+}
+.header input{
+  width: 180px;
+  height: 35px;
+  text-align: center;
+  padding: 4px 1px;
+  border: solid 1px red;
+  border-radius: 2em;
+}
+
+/************ Series CARD ******************/
+.series-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.series {
+  background-color: #ffffff9d;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 390px;
+
+}
+.series img{
+  max-width: 100%;
+}
+.series-info{
+  padding: 1rem;
+}
+.series-info h2{
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+.series-description{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  height: 100%;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+.series:hover .series-description{
+  transform: translateY(0%);
+}
+.series-description p {
+  font-size: 15px;
+  color: black;
+}
+.series-page {
+  background-color: white;
+  padding: 1em;
+  margin: -1.2em 3em 1em 3em;
+  border-radius: 0 0 1em 1em;
+  border: solid 1px black;
+
+}
+iframe {
+  
+  
+  width: 100%;
+  height: 30em;
+  margin: 0 -1em;
+  
+}
+p {
+  font-size: 15px;
+  color: black;
+  padding: 0 5em;
+}
+
+/************* ADD+MODAL ****************/
+.addBtn{
+  color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  font-size: 14px;
+}
+.pop-up-modal input{
+  width: 240px;
+  height: 32px;
+  text-align: center;
+  padding: 4px 1px;
+  margin: 16px 0;
+}
+.pop-up-modal label{
+  font-weight: 500;
+  font-size: 16px;
+}
+.pop-up-modal textarea{
+  text-align: center;
+  padding: 4px 1px;
+  margin: 16px 0;
+}
